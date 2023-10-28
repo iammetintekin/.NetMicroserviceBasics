@@ -1,0 +1,4 @@
+Services
+	Catalog
+		FreeCourse.Services.Catalog
+			Port: 5011

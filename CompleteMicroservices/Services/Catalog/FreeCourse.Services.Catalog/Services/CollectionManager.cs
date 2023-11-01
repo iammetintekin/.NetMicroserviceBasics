@@ -6,16 +6,16 @@ namespace FreeCourse.Services.Catalog.Services
 {
     class CollectionManager : ICollectionManager
     {
-        public readonly IDatabaseConfig _db;
-        public CollectionManager(IDatabaseConfig databaseConfig)
+        public static IDatabaseConfig _dbConfig;
+        public static IMongoDatabase _database;
+        public CollectionManager(IDatabaseConfig databaseConfig, IMongoDatabase mongoDatabase)
         {
-            _db = databaseConfig;
+            _dbConfig = databaseConfig; 
             var client = new MongoClient(databaseConfig.ConnectionString);
-            var db = client.GetDatabase(databaseConfig.Name); 
-            CategoryCollection =  db.GetCollection<Category>(databaseConfig.Collection.Category);
-            CourseCollection = db.GetCollection<Course>(databaseConfig.Collection.Course);
+            // Connects catalog db
+            _database = client.GetDatabase(databaseConfig.Name); 
         } 
-        public IMongoCollection<Category> CategoryCollection { get; set; }
-        public IMongoCollection<Course> CourseCollection { get; set; } 
+        public IMongoCollection<Category> CategoryCollection { get; set; } = _database.GetCollection<Category>(_dbConfig.Collection.Category);
+        public IMongoCollection<Course> CourseCollection { get; set; } = _database.GetCollection<Course>(_dbConfig.Collection.Course);
     }
 }

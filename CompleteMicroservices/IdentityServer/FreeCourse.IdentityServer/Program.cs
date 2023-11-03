@@ -53,14 +53,21 @@ namespace FreeCourse.IdentityServer
                     var userManager = serviceProvider.GetRequiredService<UserManager<ApplicationUser>>();
                     if (!userManager.Users.Any())
                     {
-                        userManager.CreateAsync(new ApplicationUser
+                        var user = new ApplicationUser
                         {
+                            Id = Guid.NewGuid().ToString(),
                             Country = "Türkiye",
                             City = "İzmir",
                             UserName = "metintekin",
                             Email = "metintekin@metintekin.com",
-                        },
-                        "metintekin123").Wait(); // senkrona çevirdik.
+                            AccessFailedCount = 0, 
+                            EmailConfirmed = false,
+                            LockoutEnabled = false,
+                            
+                        };
+                        var psHasher = userManager.PasswordHasher.HashPassword(user, "metintekin123");
+                        user.PasswordHash = psHasher;
+                        userManager.CreateAsync(user).Wait(); // senkrona çevirdik.
                     }
                 }
 

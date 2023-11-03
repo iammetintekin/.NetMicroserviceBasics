@@ -2,3 +2,10 @@ Services
 	Catalog
 		FreeCourse.Services.Catalog
 			Port: 5011
+	PhotoStock
+		FreeCourse.Services.PhotoStock
+			Port: 5012
+			
+IdentityServer
+	FreeCourse.IdentityServer
+		Port:5001

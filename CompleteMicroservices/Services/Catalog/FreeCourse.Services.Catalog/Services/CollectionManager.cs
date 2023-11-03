@@ -7,15 +7,20 @@ namespace FreeCourse.Services.Catalog.Services
     class CollectionManager : ICollectionManager
     {
         public static IDatabaseConfig _dbConfig;
-        public static IMongoDatabase _database;
-        public CollectionManager(IDatabaseConfig databaseConfig, IMongoDatabase mongoDatabase)
+        public CollectionManager(IDatabaseConfig databaseConfig)
         {
             _dbConfig = databaseConfig; 
+
             var client = new MongoClient(databaseConfig.ConnectionString);
-            // Connects catalog db
-            _database = client.GetDatabase(databaseConfig.Name); 
-        } 
-        public IMongoCollection<Category> CategoryCollection { get; set; } = _database.GetCollection<Category>(_dbConfig.Collection.Category);
-        public IMongoCollection<Course> CourseCollection { get; set; } = _database.GetCollection<Course>(_dbConfig.Collection.Course);
+            var DB = client.GetDatabase(databaseConfig.Name);
+
+            _categoryCollection = new Lazy<IMongoCollection<Category>>(()=> DB.GetCollection<Category>(_dbConfig.Collection.Category));
+            _courseCollection = new Lazy<IMongoCollection<Course>>(() => DB.GetCollection<Course>(_dbConfig.Collection.Course));
+        }
+        private Lazy<IMongoCollection<Category>> _categoryCollection;
+        private Lazy<IMongoCollection<Course>> _courseCollection;
+
+        public IMongoCollection<Category> CategoryCollection => _categoryCollection.Value;
+        public IMongoCollection<Course> CourseCollection => _courseCollection.Value;
     }
 }

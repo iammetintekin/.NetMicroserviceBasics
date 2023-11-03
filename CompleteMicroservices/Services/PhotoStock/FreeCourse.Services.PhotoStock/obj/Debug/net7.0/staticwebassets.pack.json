@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\metot\\source\\repos\\.NetMicroserviceBasics\\CompleteMicroservices\\Services\\PhotoStock\\FreeCourse.Services.PhotoStock\\wwwroot\\photosAdsız tasarım.png",
+      "PackagePath": "staticwebassets\\photosAdsız tasarım.png"
+    },
+    {
+      "Id": "C:\\Users\\metot\\source\\repos\\.NetMicroserviceBasics\\CompleteMicroservices\\Services\\PhotoStock\\FreeCourse.Services.PhotoStock\\wwwroot\\photos\\file",
+      "PackagePath": "staticwebassets\\photos"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.FreeCourse.Services.PhotoStock.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.FreeCourse.Services.PhotoStock.props",
+      "PackagePath": "build\\FreeCourse.Services.PhotoStock.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.FreeCourse.Services.PhotoStock.props",
+      "PackagePath": "buildMultiTargeting\\FreeCourse.Services.PhotoStock.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.FreeCourse.Services.PhotoStock.props",
+      "PackagePath": "buildTransitive\\FreeCourse.Services.PhotoStock.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

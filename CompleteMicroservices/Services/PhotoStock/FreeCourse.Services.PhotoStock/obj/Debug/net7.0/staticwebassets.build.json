@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "b2CDeIQBLfmDc0siIJVyMf3dVTN9cXlMwatVXbVAjpY=",
+  "Source": "FreeCourse.Services.PhotoStock",
+  "BasePath": "_content/FreeCourse.Services.PhotoStock",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "FreeCourse.Services.PhotoStock\\wwwroot",
+      "Source": "FreeCourse.Services.PhotoStock",
+      "ContentRoot": "C:\\Users\\metot\\source\\repos\\.NetMicroserviceBasics\\CompleteMicroservices\\Services\\PhotoStock\\FreeCourse.Services.PhotoStock\\wwwroot\\",
+      "BasePath": "_content/FreeCourse.Services.PhotoStock",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}

@@ -20,6 +20,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IdentityServer", "IdentityS
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FreeCourse.IdentityServer", "IdentityServer\FreeCourse.IdentityServer\FreeCourse.IdentityServer.csproj", "{365CBAE9-5E61-415D-86C6-7C0E25A7B744}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PhotoStock", "PhotoStock", "{1E5B486A-2796-4B0F-B3EF-03D316418792}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreeCourse.Services.PhotoStock", "Services\PhotoStock\FreeCourse.Services.PhotoStock\FreeCourse.Services.PhotoStock.csproj", "{6C28B662-91ED-4BA2-A502-15117C22196F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -38,6 +42,10 @@ Global
 		{365CBAE9-5E61-415D-86C6-7C0E25A7B744}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{365CBAE9-5E61-415D-86C6-7C0E25A7B744}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{365CBAE9-5E61-415D-86C6-7C0E25A7B744}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C28B662-91ED-4BA2-A502-15117C22196F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C28B662-91ED-4BA2-A502-15117C22196F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C28B662-91ED-4BA2-A502-15117C22196F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C28B662-91ED-4BA2-A502-15117C22196F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -47,6 +55,8 @@ Global
 		{E69C93D0-050E-4CF1-90D8-EA7BDC20EF47} = {1D833531-269B-4296-BEA9-58868C72CD29}
 		{FF09029B-C04E-4F8B-B05C-E9AF02BB5A5A} = {284154E2-61AC-44B8-BBCD-94D819A5C2D5}
 		{365CBAE9-5E61-415D-86C6-7C0E25A7B744} = {C31885CC-C91B-40F9-8AB3-78704E41F2C8}
+		{1E5B486A-2796-4B0F-B3EF-03D316418792} = {92FD076C-3679-4EAD-B30B-6CF104A8AB0F}
+		{6C28B662-91ED-4BA2-A502-15117C22196F} = {1E5B486A-2796-4B0F-B3EF-03D316418792}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {404021E2-0FDA-4650-A481-754A6427308E}

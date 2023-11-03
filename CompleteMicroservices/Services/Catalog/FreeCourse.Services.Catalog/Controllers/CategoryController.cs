@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace FreeCourse.Services.Catalog.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]/[action]")]
     [ApiController]
     public class CategoryController : CustomBaseController
     {
@@ -18,20 +18,20 @@ namespace FreeCourse.Services.Catalog.Controllers
         {
             _category = category;
         }
-        [HttpGet]
+        [HttpGet(Name ="GetAll")]
         public async Task<IActionResult> List()
         {
             var data = await _category.GetAllAsync();
             return CreateActionResultInstance(data);
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("{id}", Name ="GetById")]
         public async Task<IActionResult> GetById(string id)
         {
             var data = await _category.GetByIdAsync(id);
             return CreateActionResultInstance(data);
         }
-        [HttpPost]
+        [HttpPost(Name = "Insert")]
         public async Task<IActionResult> Create(CategoryDto model)
         {
             var data = await _category.CreateAsync(model);

@@ -2,6 +2,7 @@ using FreeCourse.Services.Catalog.Services;
 using FreeCourse.Services.Catalog.Services.Abstract;
 using FreeCourse.Services.Catalog.Services.Concrete;
 using FreeCourse.Services.Catalog.Utilities.AppSettingsConfig;
+using FreeCourse.Shared.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.Extensions.Options;
@@ -35,10 +36,11 @@ builder.Services.AddSingleton<IDatabaseConfig,DatabaseConfig>(sp =>
 {
     return sp.GetRequiredService<IOptions<DatabaseConfig>>().Value;
 });
-builder.Services.AddHttpContextAccessor();
+builder.Services.AddHttpContextAccessor(); // eklenmiþ olmalý
 builder.Services.AddScoped<ICollectionManager, CollectionManager>();
 builder.Services.AddScoped<ICategoryService, CategoryService>();
 builder.Services.AddScoped<ICourseService, CourseService>();
+builder.Services.AddScoped<ISharedIdentityService, SharedIdentityService>();
 
 //-----------
 var app = builder.Build();

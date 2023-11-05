@@ -5,6 +5,12 @@ Services
 	PhotoStock
 		FreeCourse.Services.PhotoStock
 			Port: 5012
+	BasketApi
+		FreeCourse.Services.Basket
+			Port: 5013
+	DiscountApi
+		FreeCourse.Services.Discount
+			Port: 5014
 			
 IdentityServer
 	FreeCourse.IdentityServer

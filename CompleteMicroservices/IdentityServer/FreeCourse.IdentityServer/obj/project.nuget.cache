@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "1YXbeRzBjaNvVhhgYJwCOgJdwhUZn2ikBStyEtxoESUE+CXwtqIvQibn/5jg8q7ak1Yee5AMn9Novs3K0agO+A==",
+  "dgSpecHash": "hedKmf6/1O9mABNNxtgRfsMshMlGRIHUJOZKi8jzCTjAOvOd0c1FU414M0xFIu/gC1YuUplj4rzN5RHWbS/cGw==",
   "success": true,
   "projectFilePath": "C:\\Users\\metot\\source\\repos\\.NetMicroserviceBasics\\CompleteMicroservices\\IdentityServer\\FreeCourse.IdentityServer\\FreeCourse.IdentityServer.csproj",
   "expectedPackageFiles": [

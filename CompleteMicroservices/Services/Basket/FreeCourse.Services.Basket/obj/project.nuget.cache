@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "3dlKUK37KUelLdcHZC2/V8R6+qfbFZwNcBeGQXLUwoSvahwO8E++q51ET4OKZV7Ue6m+GOQzC6IzAqUKvzwcSg==",
+  "dgSpecHash": "j53d70ZhnuD5MVcUSayYvNdYuaCC45krZlLCrqImR0zOjQUsFsPwBxmrdnDXlj3zQ8Ukx+gZ5dN00DK3cxcN/Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\metot\\source\\repos\\.NetMicroserviceBasics\\CompleteMicroservices\\Services\\Basket\\FreeCourse.Services.Basket\\FreeCourse.Services.Basket.csproj",
   "expectedPackageFiles": [

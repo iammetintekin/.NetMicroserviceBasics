@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "HPgJfzgHWZ/DyqUDevvS6ahPtEVu6K0vrGCcemSfvPJUNQpNizmRL7RRvvqCyGPUPr6KYlSvcSx6LUyAcDwyxQ==",
+  "dgSpecHash": "GZ/fboijNRQkA7sYWu/7gFq/6w1Ei5p8hA511IDHTBQosnG/EytPnfcv0DfFgzHzRQEtU8oV8b++OdKODcV+HQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\metot\\source\\repos\\.NetMicroserviceBasics\\CompleteMicroservices\\Services\\Catalog\\FreeCourse.Services.Catalog\\FreeCourse.Services.Catalog.csproj",
   "expectedPackageFiles": [
